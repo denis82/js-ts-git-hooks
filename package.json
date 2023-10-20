@@ -47,10 +47,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "lint-pre-push"
+      "pre-push": "lint-prepush"
     },
   "lint-prepush": {
-    "tasks": { "*.js": [ "eslint" ] }
+    "tasks": { "*.{js,ts}": [ "eslint" ] }
     }
   }
 }

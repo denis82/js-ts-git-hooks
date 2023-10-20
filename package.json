@@ -54,6 +54,7 @@
       "pre-push": "lint-prepush"
     },
     "lint-prepush": {
+      "base": "master",
       "tasks": { "./src/**/*.{js,ts}": ["prettier --write", "eslint --max-warnings 0"]
       }
     }

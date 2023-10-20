@@ -9,7 +9,7 @@
     "test": "ng test",
     "prepare": "husky install",
     "lint": "eslint \"**/*.{ts,tsx}\"",
-    "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
+    "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix"
   },
   "private": true,
   "dependencies": {
@@ -40,19 +40,17 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "lint-prepush": "^2.2.1",
     "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
     "typescript": "~4.8.2"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit": ".husky/pre-commit",
-      "pre-push": ".husky/pre-push"
+  "husky": {
+    "hooks": {
+      "pre-push": "lint-pre-push"
+    },
+  "lint-prepush": {
+    "tasks": { "*.js": [ "eslint" ] }
     }
-  },
-  {
-    "lint-staged":{
-      "./src/**/*.{js,ts}": ["prettier --write", "eslint --max-warnings 0"]
-     }
   }
 }

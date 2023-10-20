@@ -6,9 +6,9 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.ts": "npx tsc --noEmit",
-    "*.{js,jsx,ts,tsx}": "npx eslint",
-    "*.{js,jsx,ts,tsx,html,css}": "npx prettier --check"
+    "/*.ts": "npx tsc --noEmit",
+    "/*.{js,jsx,ts,tsx}": "npx eslint",
+    "/*.{js,jsx,ts,tsx,html,css}": "npx prettier --check"
   },
   "author": "Lynn",
   "license": "ISC",
@@ -27,5 +27,5 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4"
-  }
+  },
 }

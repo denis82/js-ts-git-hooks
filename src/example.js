@@ -1,7 +1,7 @@
 function sum(x, y) {
   return x + y
 }
-
+const t = 1;
 const x = 100;
 const y = '200';
 const xPlusY = sum(x, y);

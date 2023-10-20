@@ -48,5 +48,10 @@
     "hooks":{
       "pre-push": "lint-staged"
     }
+  },
+  {
+    "lint-staged":{
+      "./src/**/*.{js,ts}": ["prettier --write", "eslint --max-warnings 0"]
+     }
   }
 }

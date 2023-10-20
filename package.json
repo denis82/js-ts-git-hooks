@@ -46,8 +46,8 @@
   },
   "husky":{
     "hooks":{
-      "pre-commit": "./.husky/pre-commit",
-      "pre-push": "./.husky/pre-push"
+      "pre-commit": ".husky/pre-commit",
+      "pre-push": ".husky/pre-push"
     }
   },
   {
